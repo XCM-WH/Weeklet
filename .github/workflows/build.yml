@@ -1,0 +1,30 @@
+name: Build Windows app
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build application and installer
+        shell: powershell
+        run: .\build.ps1
+      - name: Upload Windows binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: LightWeekTodo-Windows
+          path: |
+            build/LightWeekTodo.exe
+            build/LightWeekTodo-Setup.exe
+          if-no-files-found: error

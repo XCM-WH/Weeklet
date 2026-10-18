@@ -1,0 +1,18 @@
+# Generated binaries and UI test data
+/build/
+/test-output/
+/bin/
+/obj/
+/.vs/
+*.user
+*.suo
+
+# Local application data and signing material
+data.json*
+error.log
+.env
+.env.*
+*.pfx
+*.key
+
+# The verified installer under releases/ is intentionally tracked.
