@@ -1,0 +1,44 @@
+轻周待办 1.0.5 验证记录
+修改：设置与托盘菜单新增锁定位置，保存开关状态，阻止标题区拖动及系统移动命令。
+
+应用自检：
+PASS: Sunday and cross-year Monday week boundary
+PASS: New week starts on Monday
+PASS: First run empty, transparent, unlocked, optional pin
+PASS: Old data without the position-lock field loads unlocked
+PASS: Settings lock toggle immediately persists the current position and locked state
+PASS: Top-right plus opens add dialog and submits a task
+PASS: Canceling add dialog leaves the checklist unchanged
+PASS: Add Chinese and multiline-wrapped tasks
+PASS: Reorder task
+PASS: Checkbox event immediately persists completed state
+PASS: Shared edit dialog saves text while preserving completed state
+PASS: Next week starts empty
+PASS: Dialog adds to the selected week without changing history
+PASS: Delete task persists
+PASS: Reopen preserves all weeks and settings including position lock
+PASS: Reopened widget shows position lock enabled
+PASS: The same settings toggle unlocks the widget and persists it
+PASS: 24+ tasks scroll at minimum window size
+PASS: Real Windows tray icon and show, hide, pin, startup, exit menu created
+PASS: Hide closes visual surface while tray remains available
+PASS: Restore shows window
+PASS: Corrupt file preserved and previous atomic backup restored
+PASS: Recovered data can be saved and read again
+
+安装程序隔离检查：
+PASS: Embedded application, readme, and product marker extract correctly
+PASS: Custom install destination supports Chinese characters, spaces, and nested folders
+PASS: Empty, relative, drive-relative, and drive-root destinations rejected
+PASS: Unrelated same-name files in selected destination are preserved
+PASS: Embedded payload is the expected executable assembly
+PASS: Windows shortcut creation
+PASS: Shortcut target resolves to the custom installation path
+PASS: Uninstaller removes only application files and retains unknown files
+PASS: Uninstaller refuses a directory without the product marker
+Installer layout: {Width=986, Height=840} client={Width=980, Height=794} dpi=168 scale={Width=168, Height=168} current={Width=168, Height=168}
+PASS: Editable destination and Browse button fit inside the window at system DPI
+
+通过实际设置菜单点击验证锁定和解锁保存、重建窗口时开关状态，以及旧版数据兼容。
+未操作真实待办数据或实际安装；安装检查在工作目录内隔离进行。
+安装包未做数字签名。

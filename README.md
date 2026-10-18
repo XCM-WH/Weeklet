@@ -1,4 +1,6 @@
-# 轻周待办 · Light Week Todo
+# Weeklet · 轻周待办
+
+Weeklet is a lightweight weekly to-do widget for Windows 11, featuring a transparent background, checkable tasks, automatic numbering, and a clean, minimal design. Keep your plans on your desktop with adjustable sizing, position locking, and automatic local saving.
 
 适用于 Windows 11 的轻量桌面周待办挂件。透明背景、白色文字，按周保存清单，不需要账号或联网。
 
@@ -65,3 +67,7 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1 -Test
 ## 版本
 
 当前版本：**1.0.5**。详见 [更新记录](CHANGELOG.md)。
+
+## 许可证
+
+[MIT License](LICENSE)，Copyright (c) 2026 XCM-WH。
